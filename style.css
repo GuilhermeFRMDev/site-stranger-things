@@ -49,9 +49,6 @@ button {
   outline: none;
   padding: 16px 0px;
   border-bottom: 1px solid white;
-}
-
-button:hover {
   cursor: pointer;
 }
 
