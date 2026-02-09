@@ -44,8 +44,8 @@ function animarPagina() {
     stagger: 0.05,
     scrollTrigger: {
       trigger: ".secaoAgradecimentos ul",
-      start: "0% 80%",
-      end: "100% 50%",
+      start: "0% 90%",
+      end: "100% 70%",
       scrub: true,
     },
   });
