@@ -230,7 +230,15 @@ ul {
     margin-bottom: 40px;
   }
 
-  ul {
+  .loopCidades {
+    width: 100%;
+
+    .cidadeMobile {
+      display: none;
+    }
+  }
+
+  .loopCidades ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -330,7 +338,66 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+  .secaoAgradecimentos {
+    .loopCidades {
+      width: max-content;
+      display: flex;
+
+      .cidadeMobile {
+        display: flex;
+      }
+
+      ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        padding-left: 40px;
+        margin: 0;
+        animation: textoInfinito 15s linear infinite;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .hero {
+    flex-direction: column;
+    padding: 15% 4vw 0;
+
+    .direita {
+      width: 100%;
+    }
+
+    .esquerda {
+      width: 50%;
+      h3,
+      h1 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 7vw;
+      }
+    }
+
+    .direita {
+      align-items: end;
+      p {
+        font-size: 4vw;
+        text-align: start;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .secaoCidade {
+    button {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 770px) {
   section {
     padding: 4vw;
   }
@@ -362,7 +429,7 @@ footer {
     }
 
     .direita {
-      align-items: start;
+      align-items: end;
       p {
         font-size: 5.5vw;
         text-align: start;
@@ -372,7 +439,7 @@ footer {
   }
 
   .secaoCidade {
-    margin-top: 80px;
+    padding-top: 80px;
     button {
       display: none;
     }
